@@ -1,0 +1,122 @@
+{
+  "faqs": [
+    {
+      "id": "1",
+      "category": "Players",
+      "question": "When will the ACTIV app be available?",
+      "answer": "ACTIV is rolling out across major cities soon. Download the app on iOS or Android to check availability in your area and pre-register your account."
+    },
+    {
+      "id": "2",
+      "category": "Players",
+      "question": "How does ACTIV ensure venue quality?",
+      "answer": "Every single venue on ACTIV is physically reviewed and verified by our team before listing to ensure real photos, proper equipment, and accurate live availability."
+    },
+    {
+      "id": "3",
+      "category": "Players",
+      "question": "What happens if I'm running late for a booking?",
+      "answer": "You can view your booking details and directly contact the venue manager through the app to inform them of any minor schedule changes."
+    },
+    {
+      "id": "4",
+      "category": "Players",
+      "question": "Can I cancel or get a refund on a booking?",
+      "answer": "Yes, cancellations made within the permitted venue window are fully refunded back to your source account instantly."
+    },
+    {
+      "id": "5",
+      "category": "Players",
+      "question": "Can I share my booking with friends?",
+      "answer": "Absolutely! You can share booking confirmation links directly via WhatsApp or copy details to share with your group instantly."
+    },
+    {
+      "id": "6",
+      "category": "Players",
+      "question": "How do I find only verified venues near me?",
+      "answer": "All venues listed on ACTIV are pre-vetted. Use location permissions or search by your preferred area to see active spaces immediately."
+    },
+    {
+      "id": "7",
+      "category": "Venue partners",
+      "question": "What types of venues can partner with ACTIV?",
+      "answer": "Turfs, badminton courts, pickleball arenas, fitness studios, yoga spaces, gyms, and sports complexes of all sizes."
+    },
+    {
+      "id": "8",
+      "category": "Venue partners",
+      "question": "What's the commission structure on ACTIV?",
+      "answer": "We maintain transparent per-booking models with zero setup costs or hidden subscription overheads."
+    },
+    {
+      "id": "9",
+      "category": "Venue partners",
+      "question": "How long does the approval process take?",
+      "answer": "Most venues go live within 24 hours following quick verification and slot configuration by our onboarding team."
+    },
+    {
+      "id": "10",
+      "category": "Venue partners",
+      "question": "Can I control my pricing and availability?",
+      "answer": "Yes, you have full real-time control over slot pricing, peak hours, blackout dates, and court availability via your partner dashboard."
+    },
+    {
+      "id": "11",
+      "category": "Venue partners",
+      "question": "How do I receive payments for bookings?",
+      "answer": "Payments are processed securely online and settled directly to your registered bank account on a scheduled cycle."
+    },
+    {
+      "id": "12",
+      "category": "Venue partners",
+      "question": "What support does ACTIV provide partners?",
+      "answer": "Dedicated account management, technical assistance, marketing boost in local search results, and 24/7 operational support."
+    },
+    {
+      "id": "13",
+      "category": "Platform & Support",
+      "question": "Which cities is ACTIV launching in?",
+      "answer": "We are actively expanding across Mumbai, Bengaluru, Hyderabad, Delhi-NCR, Pune, and major tier-1 sports hubs."
+    },
+    {
+      "id": "14",
+      "category": "Platform & Support",
+      "question": "How do I cancel or reschedule a booking?",
+      "answer": "Navigate to your bookings tab in the app, select the active reservation, and tap modify or cancel according to venue policy."
+    },
+    {
+      "id": "15",
+      "category": "Platform & Support",
+      "question": "What happens if a venue cancels on me?",
+      "answer": "In rare cases of venue-side cancellations, you receive an immediate full refund plus priority re-booking options."
+    },
+    {
+      "id": "16",
+      "category": "Platform & Support",
+      "question": "How do I reach the ACTIV team?",
+      "answer": "You can reach us anytime at Support@activ.live or submit the direct contact form below for prompt assistance."
+    }
+  ],
+  "contacts": [
+    {
+      "id": "41d08603-de9a-4bd3-954b-82689d6f618b",
+      "fullName": "AkShIt NaNnAwArE",
+      "email": "akshitnannaware@gmail.com",
+      "phone": "07470351182",
+      "message": "uiwudeuid",
+      "createdAt": "2026-09-18T09:28:11.258Z"
+    }
+  ],
+  "socialLinks": {
+    "instagram": "#",
+    "linkedin": "#",
+    "facebook": "#",
+    "youtube": "#",
+    "x": "#"
+  },
+  "adminProfile": {
+    "name": "ACTIV Administrator",
+    "email": "adminactiv@gmail.com",
+    "role": "Super Admin"
+  }
+}

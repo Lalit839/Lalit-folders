@@ -1,0 +1,62 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: activ
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-activ}
+      POSTGRES_DB: activ
+    volumes:
+      - prod-postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U activ -d activ"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    volumes:
+      - prod-redis:/data
+
+  backend:
+    build:
+      context: .
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      NODE_ENV: production
+      DATABASE_URL: postgresql://activ:${POSTGRES_PASSWORD:-activ}@postgres:5432/activ?schema=public
+      REDIS_URL: redis://redis:6379
+    volumes:
+      - prod-media:/app/media
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    healthcheck:
+      test: ["CMD-SHELL", "node -e \"fetch('http://localhost:3000/api/v1/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))\""]
+      interval: 20s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - prod-caddy:/data
+    depends_on:
+      - backend
+
+volumes:
+  prod-postgres:
+  prod-redis:
+  prod-caddy:
+  prod-media:

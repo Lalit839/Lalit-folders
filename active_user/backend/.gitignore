@@ -1,0 +1,23 @@
+# Dependencies and build output
+node_modules/
+dist/
+coverage/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+!.env.production.example
+*.local
+
+# Local logs and runtime files
+*.log
+.tmp/
+.cache/
+
+dist-seed/
+
+# Media content files are deployed along with the backend
+# media/**
+# !media/**/.gitkeep
+# !media/**/

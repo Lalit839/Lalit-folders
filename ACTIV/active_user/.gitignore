@@ -1,0 +1,93 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+/android/.kotlin/
+
+# Environment variables
+.env*
+!.env.example
+!.env.production.example
+
+# Security / Keystores / Secrets (CRITICAL)
+android/key.properties
+*.keystore
+*.jks
+*.p12
+*.pem
+*.mobileprovision
+*-firebase-adminsdk-*.json
+credentials.json
+
+# iOS & macOS Build / User Data
+ios/Pods/
+.xcworkspace/xcuserdata/
+.xcodeproj/xcuserdata/
+*.xcuserdatad
+DerivedData/
+
+# Windows / OS Specific Files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Crashlytics / NDK / Firebase
+crashlytics-build.properties
+
+# Logs and databases
+*.sqlite
+*.db
+
+# Local build & serve logs (never commit)
+build_log*.txt
+serve_log.txt
+serve_err_log.txt
+backend/serve_log.txt
+backend/serve_err_log.txt
+
+# Local sandbox/demo artifacts (never commit)
+ACTIV-SANDBOX-CLIENT.apk
+start_sandbox.bat

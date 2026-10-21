@@ -1,0 +1,8 @@
+api.activlive.in {
+    reverse_proxy backend:3000
+    encode gzip
+    header {
+        X-Content-Type-Options nosniff
+        X-Frame-Options DENY
+    }
+}

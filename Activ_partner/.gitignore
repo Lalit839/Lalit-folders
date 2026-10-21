@@ -1,0 +1,17 @@
+.env
+.env.*
+**/.env
+**/.env.*
+**/.git/
+**/.dart_tool/
+**/ephemeral/
+**/node_modules/
+**/build/
+**/dist/
+**/.next/
+**/.vite/
+*.pem
+*.key
+*.p12
+*.jks
+*.keystore
